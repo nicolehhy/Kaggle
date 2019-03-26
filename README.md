@@ -1,7 +1,38 @@
 # Kaggle
 The projects on Kaggle, using R or Python
+### This repository consists of three kaggle topics
+ * Ames Housing Price Presiction
+ * Titanic Survival Prediction
+ * Tripadvisor Reviews Clustering
 
-### (i)	Classification (Titanic data set)
+### (i) Ames Housing Price Presiction
+  * 1．	Background <br>
+Purpose: learn 3 different algorithms to do prediction. This project includes data split, data cleaning, data exploration, feature engineering and model building.
+
+  * 2.  data split <br>
+Before building the model , we need to divide the data into training and test set. The training part is used for building the predictive model, and the test part is to check the accuracy of that.
+
+  * 3.  data cleaning <br>
+Raw data usually has some outliers and missing values which could affect the accuracy of the model. So in this part, we need to deal with them before feature engineering
+
+  * 4.  feature engineering <br>
+Before we conduct feature engineering. We should have a quick look at the importance of variables after implemented data cleaning. We pick out the variables we consider as important. 
+
+  * 5.  prepare the data for model <br>
+At first, we should drop highly correlated variables. Then we need to normalize the numeric predictors. For factor variables, we need to do the one hot encoding to normalize them, using model.martix() . After that, we need to drop the variables whose levels are less than 10, because less levels will not be that accurate in modeling 
+
+  * 6. logit the sale_price <br>
+  Dealing with skewness of response variable can switch the response variables into normal distribution. 
+
+  * 7. build the model <br>
+    * XGboost <br>
+    XGboost takes the shortest time when building the prediction model. And its accuracy is the best. 
+    
+    * Lasso
+    * GAM
+
+
+### (ii)	Classification (Titanic data set)
 In this project, I used the Titanic data set which has been used on Kaggle (https://www.kaggle.com/broaniki/titanic) as the basis for a competition entitled Titanic: Machine Learning from Disaster. I used classification method to analyze the relationship between the predictors and passengers’ survival probability, and how to choose the most significant ones to build the model. 
 
   * Note: the steps I conducted below involve data cleaning, building the model, estimation and plotting...
@@ -45,7 +76,7 @@ The below is how decision tree looks like:<br>
 <img src="https://github.com/nicolehhy/Kaggle/blob/master/Picture1.png" width="500" alt="decision tree">
 
 
-### (ii)	Clustering (Trip Advisor Reviews data set)
+### (iii)	Clustering (Trip Advisor Reviews data set)
 In this project, I used Trip Advisor Reviews data set which is from (https:// archive.ics.uci.edu/ml/datasets/Travel+Reviews), which is a web site hosted at the University of California at Irvine (UCI) that contains a large number of data sets which people use for testing data mining methods. I used multiple clustering methods in this part to category the 10 attributes for the clustering model.
 
   * 1.Data overview ** <br>
