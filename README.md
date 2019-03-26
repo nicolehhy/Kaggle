@@ -6,7 +6,7 @@ The projects on Kaggle, using R or Python
  * Tripadvisor Reviews Clustering
 
 ### (i) Ames Housing Price Presiction
-  * 1．	Background <br>
+  * 1. 	Background <br>
 Purpose: learn 3 different algorithms to do prediction. This project includes data split, data cleaning, data exploration, feature engineering and model building.
 
   * 2.  data split <br>
