@@ -27,6 +27,8 @@ At first, we should drop highly correlated variables. Then we need to normalize 
   * 7. build the model <br>
     * XGboost <br>
     XGboost takes the shortest time when building the prediction model. And its accuracy is the best. 
+    <img src="https://github.com/nicolehhy/Kaggle/blob/master/Picture1.png" width="500" alt="decision tree">
+    <img src="https://github.com/nicolehhy/Kaggle/blob/master/Picture1.png" width="500" alt="decision tree">
     
     * Lasso
     * GAM
